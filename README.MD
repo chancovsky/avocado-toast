@@ -34,7 +34,7 @@ If you feel like contributing to this project, all help will be welcome!
 
     git clone https://github.com/chancovsky/avocado-toast.git
     cd measuring-cup
-    npm install
+    npm install
 
 ## Authors
 
