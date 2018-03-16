@@ -33,8 +33,8 @@ When creating a new toast notification you have a couple options to pass in.  Mo
 If you feel like contributing to this project, all help will be welcome!
 
     git clone https://github.com/chancovsky/avocado-toast.git
-    cd measuring-cup
-    npm install
+    cd avocado-toast
+    npm install
 
 ## Authors
 
