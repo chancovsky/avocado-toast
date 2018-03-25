@@ -2,10 +2,12 @@ class AvocadoToast {
   constructor() {
     this.toastMap = [];
     this.i = 0;
-    const style = `.avo-toast {
+    this.font = 'font-family: Arial, Helvetica, sans-serif;';
+    this.bg = 'rgba(118, 109, 249, .9)';
+    const style = `
+                .avo-toast {
                 position: fixed;
                 padding: 8px 16px 8px 16px;
-                background: #232323;
                 z-index: 999;
                 right: 40px;
                 animation: toast 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -45,11 +47,13 @@ class AvocadoToast {
     this.i += 1;
     const text = options.text === undefined ? '' : options.text;
     const delay = options.delay === undefined ? 4000 : options.delay;
+    const bg = options.bg === undefined ? this.bg : options.bg;
     // const callback = options.callback === undefined ? null : options.callback;
     const elem = document.createElement('div');
     elem.className = 'avo-toast show-toast';
     elem.setAttribute('data', this.i);
     elem.innerHTML += text;
+    elem.style = `${this.font}  background: ${bg}`;
     document.body.append(elem);
     this.toastMap.unshift(elem);
     this.destroy(elem, delay);
@@ -66,13 +70,13 @@ class AvocadoToast {
     elem.className += ' hide-toast';
     window.setTimeout(() => {
       this.delete(elem);
-    }, delay + 660);
+    }, 660);
   }
 
   delete(elem) {
     const index = this.toastMap.indexOf(elem);
     elem.remove();
-    this.toastMap.slice(index, 1);
+    this.toastMap.splice(index, 1);
     this.update();
   }
 
