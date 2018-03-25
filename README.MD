@@ -1,4 +1,6 @@
 # avocado-toast
+[![npm version](https://badge.fury.io/js/avocado-toast.svg)](https://badge.fury.io/js/avocado-toast)
+
 Super lightweight toast notifications with zero dependencies 🥑🍞
 ## Getting Started
 
