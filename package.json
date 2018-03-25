@@ -1,6 +1,6 @@
 {
   "name": "avocado-toast",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Super lightweight toast notifications with zero dependencies 🥑🍞",
   "main": "dist/index.min.js",
   "scripts": {
