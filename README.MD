@@ -26,6 +26,7 @@ When creating a new toast notification you have a couple options to pass in.  Mo
 
 - text {string} : The text that will appear within the toast. 
 - delay {int} : How long the toast will last before it disappears.
+- bg {string} : Set the background color for the toast (hex, rgb, rgba). 
 
 
 ## Contributing
